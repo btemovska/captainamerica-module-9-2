@@ -14,7 +14,8 @@
 <section class="caveDetails">
     <a class="backHome" th:href="'/difficulties/'+${cave.difficulty.level}">back to caves</a>
     <h1 class="caveDetailsName" th:text="${cave.name}">Refactoring</h1>
-    <p class="caveDetailsContent" th:text="${cave.continent}"></p>
+<!--    <h3 class="caveDetailsContinent" th:text="${cave.continent}"></h3>-->
+        <h3 class="caveContinent" th:text="${cave.continent()}"></h3>
     <img class="caveImage" th:src="${cave.imageUrl}">
 </section>
 <footer>
