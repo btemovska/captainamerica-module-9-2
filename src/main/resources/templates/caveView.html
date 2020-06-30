@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="../css/style.css">
 
+    <title>Single Cave View</title>
+</head>
+
+<body>
+<section class="caveDetails">
+    <a class="backHome" th:href="'/difficulties/'+${cave.difficulty.level}">back to caves</a>
+    <h1 class="caveDetailsName" th:text="${cave.name}">Refactoring</h1>
+    <p class="caveDetailsContent" th:text="${cave.continent}"></p>
+    <img class="caveImage" th:src="${cave.imageUrl}">
+</section>
+<footer>
+    &copy; Captain America Team 2020
+</footer>
 </body>
 </html>

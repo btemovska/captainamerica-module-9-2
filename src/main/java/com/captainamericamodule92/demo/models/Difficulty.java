@@ -14,14 +14,16 @@ public class Difficulty {
     @GeneratedValue
     private Long id;
     private String level;
-    @OneToMany(mappedBy = "difficutly")
+    @OneToMany(mappedBy = "difficulty")  //changed this from difficutly to difficulty
     private Collection<Cave> caves;
 
     public Long getId() {
         return id;
     }
 
-    public String getDifficultyLevel() {
+//    public String getDifficultyLevel() { return level;}
+
+    public String getLevel() {
         return level;
     }
 
@@ -31,8 +33,12 @@ public class Difficulty {
 
     public Difficulty() {}
 
-    public Difficulty(String difficultyLevel) {
-        this.level = difficultyLevel;
+//    public Difficulty(String difficultyLevel) {
+//        this.level = difficultyLevel;
+//    }
+
+    public Difficulty(String level) {
+        this.level = level;
     }
 
     @Override

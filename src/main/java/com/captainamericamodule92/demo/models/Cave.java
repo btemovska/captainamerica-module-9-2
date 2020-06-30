@@ -16,7 +16,8 @@ public class Cave {
     private String imageUrl;
     private String continent;
     @ManyToOne
-    private Difficulty level;
+//    private Difficulty level;
+    private Difficulty difficulty;
 
     public Long getId() {
         return id;
@@ -32,17 +33,26 @@ public class Cave {
 
     public String continent() { return continent;}
 
-    public Difficulty getDifficultyLevel() {
-        return level;
+//    public Difficulty getDifficultyLevel() { return level;}
+
+    public Difficulty getDifficulty() {
+        return difficulty;
     }
 
     public Cave() {};
 
-    public Cave(String name, String imageUrl, String continent, Difficulty level) {
+//    public Cave(String name, String imageUrl, String continent, Difficulty level) {
+//        this.name = name;
+//        this. imageUrl = imageUrl;
+//        this.continent = continent;
+//        this.level = level;
+//    }
+
+    public Cave(String name, String imageUrl, String continent, Difficulty difficulty){
         this.name = name;
-        this. imageUrl = imageUrl;
+        this.imageUrl = imageUrl;
         this.continent = continent;
-        this. level = level;
+        this.difficulty = difficulty;
     }
 
     @Override

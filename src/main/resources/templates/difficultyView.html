@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Single Difficulty</title>
+
+</head>
+<body>
+<header class="header">
+    <a class="backHome" href="/difficulties">back to difficulties</a>
+    <h1 class="headerTitle" th:text="${difficulty.level}"></h1>
+</header>
+<section class="caveList">
+    <h2 class="caveListHeading">Here is list of our Caves:</h2>
+
+    <nav class="caveNavList">
+        <ul>
+            <li class="caveListLinkCave" th:each="cave:${difficulty.caves}">
+                <a class="caveListLinkCave" th:href="@{'/caves/'+ ${cave.id}}"
+                   th:text="${cave.name}">Refactoring</a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+</section>
+<footer>
+    &copy; Captain America Team 2020
+</footer>
+</body>
+</html>
