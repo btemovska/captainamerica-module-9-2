@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link rel="stylesheet" href="../css/style.css">
-
     <title>Single Cave View</title>
 </head>
-
 <body>
+<header class="header">
+    <h1> <img src="../images/cave2.jpg"> </h1>
+</header>
+<nav>
+    <ul class="main_menu">
+        <li><a href="/difficulties">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Education</a></li>
+        <li><a href="">Gallery</a></li>
+    </ul>
+</nav>
+
+
 <section class="caveDetails">
     <a class="backHome" th:href="'/difficulties/'+${cave.difficulty.level}">back to caves</a>
     <h1 class="caveDetailsName" th:text="${cave.name}">Refactoring</h1>
