@@ -9,6 +9,9 @@ body {
     padding: 32px;
 
 }
+#gear img {
+    float: right;
+}
 #wrapper{
     max-width: 960px;
     margin: 0 auto;
@@ -71,5 +74,5 @@ ul.main_menu{
 #menu {
     float: left;
     width: 2000px;
-   margin: 0;
+    margin: 0;
 }
