@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: dimgrey;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.wrapper {
+    margin-top: 10%;
+}
+
+.wrapper h1{
+    font-family: 'Allura', cursive;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.info {
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap ;
+}
+
+.info .Information {
+    background: whitesmoke;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: grey;
+    position: relative;
+}
+
+.info .Information h3 {
+    color: dimgrey;
+    margin-top: 50px;
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+
+.info .Information .info_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: whitesmoke;
+}
+
+.info .Information .info_img img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: dimgrey;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.wrapper {
+    margin-top: 10%;
+}
+
+.wrapper h1{
+    font-family: 'Allura', cursive;
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.learn {
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap ;
+}
+
+.learn .information {
+    background: whitesmoke;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: grey;
+    position: relative;
+}
+
+.learn .information h3 {
+    color: dimgrey;
+    margin-top: 50px;
+    font-size: 26px;
+    margin-bottom: 50px;
+}
+
+
+.learn .information .learn_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: whitesmoke;
+}
+
+.learn .information .learn_img img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+
