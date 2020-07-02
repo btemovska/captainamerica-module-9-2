@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -11,9 +12,20 @@
 </head>
 <body>
 <header class="header">
-    <a class="backHome" href="/difficulties">back to difficulties</a>
-    <h1 class="headerTitle" th:text="${difficulty.level}"></h1>
+    <h1> <img src="../images/cave2.jpg"> </h1>
 </header>
+<nav>
+    <ul class="main_menu">
+        <li><a href="/difficulties">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="/booking.html">Book a trip</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Education</a></li>
+        <li><a href="">Gear</a></li>
+    </ul>
+</nav>
+<a class="backHome" href="/difficulties">back to difficulties</a>
+<h1 class="headerTitle" th:text="${difficulty.level}"></h1>
 <section class="caveList">
     <h2 class="caveListHeading">Here is list of our Caves:</h2>
 

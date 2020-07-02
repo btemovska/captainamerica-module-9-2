@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
-
+<!--this is front page-->
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link rel="stylesheet" href="../css/style.css">
-    <title class="title">Difficulty Level</title>
+    <title class="title">Spelunked! Travel Agency</title>
 </head>
 
 <body>
-<h1 class="difficultiesHeader">Difficulty Levels</h1>
+<header class="frontPageHeader">
+    <h1> <img src="./images/cave2.jpg"> </h1>
+    <h1>Splunked Travel Agency</h1>
+    <span class="underHeader">Connecting people and places</span>
+</header>
+</header>
+<nav>
+    <ul class="main_menu">
+        <li><a href="/difficulties">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="/booking.html">Book a trip</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Education</a></li>
+        <li><a href="">Gear</a></li>
+    </ul>
+</nav>
+<h3 class="difficultiesHeader">Search Caves by difficulty level:</h3>
 
-<h2 class="listOfDifficulties" th:each="difficulty:${difficulties}"><a th:href="@{'/difficulties/'+
+<h3 class="listOfDifficulties" th:each="difficulty:${difficulties}"><a th:href="@{'/difficulties/'+
                 ${difficulty.level}}" th:text="${difficulty.level}">Difficulty</a>
-</h2>
+</h3>
 
 <footer>
     &copy; Captain America Team 2020
