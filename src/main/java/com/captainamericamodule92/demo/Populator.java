@@ -44,7 +44,7 @@ public class Populator implements CommandLineRunner {
         Cave ease = new Cave("Ease Gill Caves", "/images/ease_gill_caves_europe.jpg", "Europe", expert);
         Cave postojna = new Cave("Postojna Cave", "/images/postojna_jama_caves_europe.jpg", "Europe", expert);
         Cave blue = new Cave("Blue Grotto", "/images/blue_grotto_caves_europe.jpg", "Europe", expert);
-        Cave ape = new Cave("Ape Cave", "/images.ape_cave_north_america.jpg", "North America", expert);
+        Cave ape = new Cave("Ape Cave", "/images/ape_cave_north_america.jpg", "North America", expert);
         Cave mammoth = new Cave("Mammoth Caves", "/images/mammoth_caves_north_america.jpg", "North America", expert);
         Cave rat = new Cave("Rat's Nest Cave", "/images/rats_nest_cave_north_america.jpg", "North America", expert);
         Cave marengo = new Cave("Marengo Cave", "/images/marengo_cave_north_america.jpg", "North America", expert);
