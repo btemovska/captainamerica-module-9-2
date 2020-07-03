@@ -32,31 +32,20 @@
                 ${difficulty.level}}" th:text="${difficulty.level}">Difficulty</a>
 </h3>
 
-<!--<script>-->
-<!--    var i = 0;-->
-<!--    var images = [];-->
-<!--    var time = 3000;-->
-
-<!--    images[0] = "./images/cango_caves_africa.jpg";-->
-<!--    images[1] = "./images/echo_caves_africa.jpg";-->
-<!--    images[2] = "./images/sudwaia_caves_africa.jpg";-->
-<!--    images[3] = "./images/sorek_cave_africa.jpg";-->
-
-
-<!--    function changeImg() {-->
-<!--        document.slide.src = images[i];-->
-<!--        if(i < images.length - 1){-->
-<!--            i++;-->
-<!--        } else {-->
-<!--            i = 0;-->
-<!--        }-->
-<!--        setTimeout("changeImg()", time);-->
-<!--    }-->
-<!--    window.onload = changeImg();-->
-
-<!--</script>-->
-
-<!--<img name="slide" class="slide" width="400" height="200"/>-->
+<div id="container">
+    <main>
+        <div id="slider">
+            <div id="images">
+                <img id="img1" src="images/antartica.jpg" alt="">
+                <img id="img2" src="images/ape_cave_north_america.jpg" alt="">
+                <img id="img3" src="images/blue_grotto_caves_europe.jpg" alt="">
+                <img id="img4" src="images/cueva_del_fantasma_caves_south_america.jpg" alt="">
+                <img id="img5" src="images/echo_caves_africa.jpg" alt="">
+            </div>
+            <div class="progress-bar"></div>
+        </div>
+    </main>
+</div>
 
 <footer>
     &copy; Captain America Team 2020
