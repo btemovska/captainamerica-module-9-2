@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: antiquewhite;
+    background-color: dimgrey;
     font-family: 'Arial', sans-serif;
 
     max-width: 960px;
@@ -15,7 +15,7 @@ body {
 #wrapper{
     max-width: 960px;
     margin: 0 auto;
-    background-color: antiquewhite;
+    background-color: dimgrey;
     padding: 32px;
 }
 /*#wrapper img{*/
@@ -23,7 +23,7 @@ body {
 /*  */
 /*}*/
 header {
-    background-color: antiquewhite;
+    background-color: dimgrey;
     height: 150px;
     padding: 4px;
 
@@ -45,7 +45,7 @@ header h2 {
     padding: 5px 0 5px 0;
     text-align: center;
     line-height: 32px;
-    background-color: antiquewhite;
+    background-color: dimgrey;
 
 }
 
@@ -75,4 +75,9 @@ ul.main_menu{
     float: left;
     width: 2000px;
     margin: 0;
+}
+
+footer{
+    text-align: center;
+    /*background-color: lightgoldenrodyellow;*/
 }
