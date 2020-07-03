@@ -22,7 +22,7 @@
         <li><a href="/difficulties">Home</a></li>
         <li><a href="/aboutUs.html">About Us</a></li>
         <li><a href="/booking.html">Book a trip</a></li>
-        <li><a href="educate.html">Education</a></li>
+        <li><a href="/educate.html">Education</a></li>
         <li><a href="/gear.html">Gear</a></li>
     </ul>
 </nav>
@@ -31,6 +31,21 @@
 <h3 class="listOfDifficulties" th:each="difficulty:${difficulties}"><a th:href="@{'/difficulties/'+
                 ${difficulty.level}}" th:text="${difficulty.level}">Difficulty</a>
 </h3>
+
+<div id="container">
+    <main>
+        <div id="slider">
+            <div id="images">
+                <img id="img1" src="images/antartica.jpg" alt="">
+                <img id="img2" src="images/ape_cave_north_america.jpg" alt="">
+                <img id="img3" src="images/blue_grotto_caves_europe.jpg" alt="">
+                <img id="img4" src="images/cueva_del_fantasma_caves_south_america.jpg" alt="">
+                <img id="img5" src="images/echo_caves_africa.jpg" alt="">
+            </div>
+            <div class="progress-bar"></div>
+        </div>
+    </main>
+</div>
 
 <footer>
     &copy; Captain America Team 2020
