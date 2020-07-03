@@ -20,11 +20,10 @@
 <nav>
     <ul class="main_menu">
         <li><a href="/difficulties">Home</a></li>
-        <li><a href="">About Us</a></li>
+        <li><a href="/aboutUs.html">About Us</a></li>
         <li><a href="/booking.html">Book a trip</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Education</a></li>
-        <li><a href="">Gear</a></li>
+        <li><a href="/educate.html">Education</a></li>
+        <li><a href="/gear.html">Gear</a></li>
     </ul>
 </nav>
 <h3 class="difficultiesHeader">Search Caves by difficulty level:</h3>
@@ -32,6 +31,32 @@
 <h3 class="listOfDifficulties" th:each="difficulty:${difficulties}"><a th:href="@{'/difficulties/'+
                 ${difficulty.level}}" th:text="${difficulty.level}">Difficulty</a>
 </h3>
+
+<!--<script>-->
+<!--    var i = 0;-->
+<!--    var images = [];-->
+<!--    var time = 3000;-->
+
+<!--    images[0] = "./images/cango_caves_africa.jpg";-->
+<!--    images[1] = "./images/echo_caves_africa.jpg";-->
+<!--    images[2] = "./images/sudwaia_caves_africa.jpg";-->
+<!--    images[3] = "./images/sorek_cave_africa.jpg";-->
+
+
+<!--    function changeImg() {-->
+<!--        document.slide.src = images[i];-->
+<!--        if(i < images.length - 1){-->
+<!--            i++;-->
+<!--        } else {-->
+<!--            i = 0;-->
+<!--        }-->
+<!--        setTimeout("changeImg()", time);-->
+<!--    }-->
+<!--    window.onload = changeImg();-->
+
+<!--</script>-->
+
+<!--<img name="slide" class="slide" width="400" height="200"/>-->
 
 <footer>
     &copy; Captain America Team 2020

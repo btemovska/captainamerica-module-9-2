@@ -67,4 +67,10 @@ a:hover{
 footer{
     text-align: center;
     /*background-color: lightgoldenrodyellow;*/
+    padding: 5em 5em;
 }
+.slide {
+    margin-left: 28%;
+}
+
+/*this is Biljana's styling;*/
