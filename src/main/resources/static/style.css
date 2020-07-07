@@ -13,23 +13,28 @@ body {
 }
 
 .wrapper {
-    margin-top: 10%;
+    /*margin-top: 10%;*/
+    margin-top: 2%;
 }
 
 .wrapper h1{
     font-family: 'Allura', cursive;
     font-size: 52px;
-    margin-bottom: 60px;
+    /*margin-bottom: 60px;*/
+    margin-bottom: 40px;
     text-align: center;
-    margin-bottom: 100px;
+    /*margin-bottom: 100px;*/
+    /*background-color: yellow;*/
 }
 
 .info {
+    margin-top: 80px;
     display: flex;
     text-align: center;
     width: auto;
     justify-content: center;
     flex-wrap: wrap ;
+    /*background-color: whitesmoke;*/
 }
 
 .info .Information {
@@ -80,17 +85,19 @@ body {
 
 }
 
-.wrapper {
-    margin-top: 10%;
-}
+/*.wrapper {*/
+/*    margin-top: 10%;*/
+/*}*/
 
-.wrapper h1{
-    font-family: 'Allura', cursive;
-    font-size: 52px;
-    margin-bottom: 60px;
-    text-align: center;
-    margin-bottom: 100px;
-}
+/*.wrapper h1{*/
+/*    font-family: 'Allura', cursive;*/
+/*    font-size: 52px;*/
+/*    margin-bottom: 60px;*/
+/*    text-align: center;*/
+/*    margin-bottom: 100px;*/
+/*}                               Biljana's updates-these were duplicate*/
+
+
 
 .learn {
     display: flex;
@@ -98,6 +105,8 @@ body {
     width: auto;
     justify-content: center;
     flex-wrap: wrap ;
+    margin-top: 60px;
+    /*background-color: yellow;*/
 }
 
 .learn .information {
@@ -136,3 +145,39 @@ body {
     padding: 10px;
 }
 
+/*Biljana adding the styling for the nav & footer*/
+
+.main_menu {
+    padding: 5px 0 5px 0;
+    text-align: center;
+    line-height: 32px;
+    /*background-color: antiquewhite;*/
+    /*background-color: lightgoldenrodyellow;*/
+
+}
+ul.main_menu{
+    margin-top: 15px;
+}
+
+.main_menu li {
+    display: inline;
+    padding: 0 10px 0 10px;
+    font-size: 16px;
+}
+
+.main_menu a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    font-variant: small-caps;
+}
+
+.main_menu a:hover {
+    color: darkcyan;
+}
+
+footer {
+    text-align: center;
+    /*background-color: lightgoldenrodyellow;*/
+    padding: 2em 5em;
+}
