@@ -1,9 +1,6 @@
 package com.captainamericamodule92.demo.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
@@ -14,9 +11,9 @@ public class Cave {
     private Long id;
     private String name;
     private String imageUrl;
-    private String continent;
     @ManyToOne
-//    private Difficulty level;
+    private Location location;
+    @ManyToOne
     private Difficulty difficulty;
 
     public Long getId() {
@@ -31,9 +28,7 @@ public class Cave {
         return imageUrl;
     }
 
-    public String continent() { return continent;}
-
-//    public Difficulty getDifficultyLevel() { return level;}
+    public Location location() { return location;}
 
     public Difficulty getDifficulty() {
         return difficulty;
@@ -41,17 +36,10 @@ public class Cave {
 
     public Cave() {};
 
-//    public Cave(String name, String imageUrl, String continent, Difficulty level) {
-//        this.name = name;
-//        this. imageUrl = imageUrl;
-//        this.continent = continent;
-//        this.level = level;
-//    }
-
-    public Cave(String name, String imageUrl, String continent, Difficulty difficulty){
+    public Cave(String name, String imageUrl, Location location, Difficulty difficulty){
         this.name = name;
         this.imageUrl = imageUrl;
-        this.continent = continent;
+        this.location = location;
         this.difficulty = difficulty;
     }
 
