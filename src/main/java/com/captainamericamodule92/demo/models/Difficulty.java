@@ -21,8 +21,6 @@ public class Difficulty {
         return id;
     }
 
-//    public String getDifficultyLevel() { return level;}
-
     public String getLevel() {
         return level;
     }
@@ -32,10 +30,6 @@ public class Difficulty {
     }
 
     public Difficulty() {}
-
-//    public Difficulty(String difficultyLevel) {
-//        this.level = difficultyLevel;
-//    }
 
     public Difficulty(String level) {
         this.level = level;
