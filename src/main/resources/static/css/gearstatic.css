@@ -1,0 +1,83 @@
+
+
+body {
+    background-color: dimgrey;
+    font-family: 'Arial', sans-serif;
+
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px;
+
+}
+#gear img {
+    float: right;
+}
+#wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: dimgrey;
+    padding: 32px;
+}
+/*#wrapper img{*/
+/*   transform: scale(1.5, .5);*/
+/*  */
+/*}*/
+header {
+    background-color: dimgrey;
+    height: 150px;
+    padding: 4px;
+
+}
+header h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    line-height: 50px;
+}
+
+header h2 {
+    font-variant: small-caps;
+    text-align: center;
+    color: black;
+}
+
+.main_menu {
+    padding: 5px 0 5px 0;
+    text-align: center;
+    line-height: 32px;
+    background-color: dimgrey;
+
+}
+
+ul.main_menu{
+    margin-top: 15px;
+}
+
+.main_menu li {
+    display: inline;
+    padding: 0 10px 0 10px;
+    font-size: 16px;
+}
+
+.main_menu a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    font-variant: small-caps;
+}
+
+.main_menu a:hover {
+    color: darkcyan;
+
+}
+
+#menu {
+    float: left;
+    width: 2000px;
+    margin: 0;
+}
+
+footer{
+    text-align: center;
+    /*background-color: lightgoldenrodyellow;*/
+}

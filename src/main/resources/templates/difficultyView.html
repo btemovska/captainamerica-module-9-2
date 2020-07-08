@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Single Difficulty</title>
+
+</head>
+<body>
+<header class="header">
+    <h1> <img src="../images/cave2.jpg"> </h1>
+</header>
+<nav>
+    <ul class="main_menu">
+        <li><a href="/difficulties">Home</a></li>
+        <li><a href="/aboutUs.html">About Us</a></li>
+        <li><a href="/booking.html">Book a trip</a></li>
+        <li><a href="/educate.html">Education</a></li>
+        <li><a href="/gear.html">Gear</a></li>
+    </ul>
+</nav>
+<!--<a class="backHome" href="/difficulties">back to difficulties</a>-->
+<h1 class="headerTitle" th:text="${difficulty.level}"></h1>
+<section class="caveList">
+    <h2 class="caveListHeading">Here is list of our Caves:</h2>
+
+    <nav class="caveNavList">
+        <ul>
+            <li class="caveListLinkCave" th:each="cave:${difficulty.caves}">
+                <a class="caveListLinkCave" th:href="@{'/caves/'+ ${cave.id}}"
+                   th:text="${cave.name}">Refactoring</a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+</section>
+<footer>
+    &copy; Captain America Team 2020
+</footer>
+</body>
+</html>

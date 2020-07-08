@@ -1,0 +1,136 @@
+body {
+    background-color: dimgrey;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+
+}
+.main_menu {
+    padding: 5px 0 5px 0;
+    text-align: center;
+    line-height: 32px;
+    /*background-color: antiquewhite;*/
+    /*background-color: lightgoldenrodyellow;*/
+
+}
+ul.main_menu{
+    margin-top: 15px;
+}
+
+.main_menu li {
+    display: inline;
+    padding: 0 10px 0 10px;
+    font-size: 16px;
+}
+
+.main_menu a {
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    font-variant: small-caps;
+}
+
+.main_menu a:hover {
+    color: darkcyan;
+}
+
+.frontPageHeader{
+    /*background-color: antiquewhite;*/
+    /*height: 150px;*/
+    padding: 4px;
+}
+header h1 {
+    /*text-transform: uppercase;*/
+    text-align: center;
+    color: black;
+    /*line-height: 50px;*/
+}
+.underHeader{
+   /*justify-content: center;*/
+   /* text-align: center;*/
+    margin-left: 350px;
+}
+
+a{
+    padding: 0em 2em;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-variant: small-caps;
+}
+a:hover{
+    color: darkcyan;
+}
+
+footer{
+    text-align: center;
+    /*background-color: lightgoldenrodyellow;*/
+    padding: 2em 5em;
+}
+.slide {
+    margin-left: 28%;
+}
+
+/*this is Biljana's styling;*/
+
+#container{
+    /*background: yellow;*/
+    /*margin: 2rem auto;*/
+    margin-left: 20rem;
+    margin-top: -10rem;
+    width: 660px;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider{
+    width: 600px;  /*as big as the image width is*/
+    height: 600px; /*as big as the image height is*/
+    overflow: hidden;
+    border: 10px solid whitesmoke;
+}
+
+#images{
+    width: 3000px; /*5 images x 600 px of width each = 3000*/
+    height: 600px;
+    overflow: hidden;
+    animation: slideImages 15s infinite;
+}
+
+#images img{
+    float: left;
+}
+
+@keyframes slideImages {
+    0%{margin-left: 0px;}
+    10%{margin-left: 0px;}
+    20%{margin-left: -600px;}  /*move it left 600 px so that 2nd image shows*/
+    30%{margin-left: -600px;}  /*move it left 600 px so that 2nd image shows*/
+    40%{margin-left: -1200px;} /*move it left 1200 px so that 3nd image shows*/
+    50%{margin-left: -1200px;} /*move it left 1200 px so that 3nd image shows*/
+    60%{margin-left: -1800px;}
+    70%{margin-left: -1800px;}
+    80%{margin-left: -2400px;}
+    90%{margin-left: -2400px;}
+    100%{margin-left: 0px;}
+}
+
+.progress-bar{
+    position: relative;
+    top: -10px;
+    width: 600px;
+    height: 10px;
+    background: darkcyan;
+    animation: animateBar 15s ease-out infinite;
+}
+
+@keyframes animateBar {
+    0%, 20%, 40%, 60%, 80%, 100%{width: 0%; opacity: 0;}
+    10%, 30%, 50%, 70%, 90% {width: 100%; opacity: 0.7;}
+    18%, 38%, 58%, 78%, 98% {width: 100%; opacity: 0;}
+}
