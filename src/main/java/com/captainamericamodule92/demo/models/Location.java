@@ -49,12 +49,21 @@ public class Location {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Location location = (Location) o;
-        return Objects.equals(id, location.id);
+//        Location location = (Location) o;
+        Location name = (Location) o;
+//        return Objects.equals(id, location.id);
+        return Objects.equals(id, name.id);
     }
+
+//    @Override
+//    public int hashCode() {
+//        return super.hashCode();
+//    }
 
     @Override
     public int hashCode() {
         return Objects.hash(id);
     }
+
+
 }

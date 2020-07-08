@@ -32,6 +32,12 @@
                 ${difficulty.level}}" th:text="${difficulty.level}">Difficulty</a>
 </h3>
 
+<h3 class="locationsHeader">Search Caves by Location:</h3>
+<h3 class="listOfLocations" th:each="location:${locations}"><a th:href="@{'/locations/'+
+                ${location.name}}" th:text="${location.name}">Location</a>
+</h3>
+
+
 <div id="container">
     <main>
         <div id="slider">
