@@ -3,21 +3,18 @@ package com.captainamericamodule92.demo.models;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import java.util.ArrayList;
-import java.util.Arrays;
+import javax.persistence.ManyToMany;
 import java.util.Collection;
 import java.util.Objects;
 
 @Entity
-public class Location {
+public class Feature {
 
     @Id
     @GeneratedValue
     private Long id;
     private String name;
-    private String imageUrl;
-    @OneToMany(mappedBy = "location")
+    @ManyToMany(mappedBy = "features")
     private Collection<Cave> caves;
 
     public Long getId() {
@@ -28,29 +25,25 @@ public class Location {
         return name;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
-    }
-
     public Collection<Cave> getCaves() {
         return caves;
     }
 
-    public Location() {
+    public Feature() {
     }
 
-    public Location(String name, String imageUrl, Cave... caves) {
+    ;
+
+    public Feature(String name){
         this.name = name;
-        this.imageUrl = imageUrl;
-        this.caves = new ArrayList<>(Arrays.asList(caves));
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Location location = (Location) o;
-        return Objects.equals(id, location.id);
+        Feature feature = (Feature) o;
+        return Objects.equals(id, feature.id);
     }
 
     @Override
