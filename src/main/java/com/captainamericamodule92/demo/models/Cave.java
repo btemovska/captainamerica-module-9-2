@@ -29,14 +29,16 @@ public class Cave {
         return name;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
-    }
+    public String getImageUrl() { return imageUrl; }
 
     public Location location() { return location;}
 
     public Difficulty getDifficulty() {
         return difficulty;
+    }
+
+    public Collection<Feature> getFeatures() {// bt added
+        return features;
     }
 
     public Cave() {};
