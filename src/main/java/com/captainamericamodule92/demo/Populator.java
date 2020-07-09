@@ -37,13 +37,13 @@ public class Populator implements CommandLineRunner {
         featureRepo.save(stalactites);
         featureRepo.save(stalagmites);
 
-        Location africa = new Location("Africa", "images/location_africa.jpg");
-        Location asia = new Location("Asia", "images/location_asia.jpg");
-        Location europe = new Location("Europe", "images/location_europe.jpg");
-        Location northAmerica = new Location("North America", "images/location_north_america.jpg");
-        Location southAmerica = new Location("South America", "images/location_south_america.jpg");
-        Location australia = new Location("Australia", "images/location_australia.jpg");
-        Location antarctica = new Location("Antarctica", "images/location_antarctica.jpg");
+        Location africa = new Location("Africa", "/images/location_africa.jpg");
+        Location asia = new Location("Asia", "/images/location_asia.jpg");
+        Location europe = new Location("Europe", "/images/location_europe.jpg");
+        Location northAmerica = new Location("North America", "/images/location_north_america.jpg");
+        Location southAmerica = new Location("South America", "/images/location_south_america.jpg");
+        Location australia = new Location("Australia", "/images/location_australia.jpg");
+        Location antarctica = new Location("Antarctica", "/images/location_antarctica.jpg");
 
         locationRepo.save(africa);
         locationRepo.save(asia);
@@ -81,7 +81,7 @@ public class Populator implements CommandLineRunner {
         Cave rat = new Cave("Rat's Nest Cave", "/images/rats_nest_cave_north_america.jpg", northAmerica, beginner, stalactites, stalagmites, wildlife);
         Cave marengo = new Cave("Marengo Cave", "/images/marengo_cave_north_america.jpg", northAmerica, expert, stalactites, stalagmites, wildlife);
         Cave moaning = new Cave("Moaning Caverns", "/images/moaning_caverns_north_america.jpg", northAmerica, intermediate, stalactites, stalagmites);
-        Cave milodon = new Cave("Cueva del Milodon Caves", "/images/cuevas_del_milodon_caves_south_america.jpg", southAmerica, beginner, stalactites, stalagmites, wildlife);
+        Cave milodon = new Cave("Cueva del Milodon Caves", "/images/cueva_del_milodon_caves_south_america.jpg", southAmerica, beginner, stalactites, stalagmites, wildlife);
         Cave gruta = new Cave("Gruta Rei do Mato Caves", "/images/gruta_rei_do_mato_south_america.jpg", southAmerica, expert, stalactites, stalagmites);
         Cave fantasma = new Cave("Cueva del Fantasma Caves", "/images/cueva_del_fantasma_caves_south_america.jpg", southAmerica, intermediate, stalactites, stalagmites, diving, wildlife);
         Cave sima = new Cave("Sima Pumacocha Caves", "/images/sima_caves_south_america.jpg", southAmerica, beginner, stalactites, stalagmites, diving);

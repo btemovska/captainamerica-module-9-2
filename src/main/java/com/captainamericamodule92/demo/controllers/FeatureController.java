@@ -25,7 +25,8 @@ public class FeatureController {
     @GetMapping("/features/{name}")
     public String displaySingleFeature(@PathVariable String name, Model model) {
         Feature retrievedFeature = featureRepo.findFeatureByName(name);
-        model.addAttribute("location", retrievedFeature);
+//        model.addAttribute("location", retrievedFeature);
+        model.addAttribute("feature", retrievedFeature);
         return "featureView";
     }
 }

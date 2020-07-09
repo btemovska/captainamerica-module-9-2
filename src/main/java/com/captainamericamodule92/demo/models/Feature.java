@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -32,10 +34,9 @@ public class Feature {
     public Feature() {
     }
 
-    ;
-
-    public Feature(String name){
+    public Feature(String name, Cave... caves){
         this.name = name;
+        this.caves = new ArrayList<>(Arrays.asList(caves));
     }
 
     @Override

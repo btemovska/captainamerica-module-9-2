@@ -2,6 +2,7 @@ package com.captainamericamodule92.demo.controllers;
 
 import com.captainamericamodule92.demo.models.Cave;
 import com.captainamericamodule92.demo.repository.CaveRepository;
+import com.captainamericamodule92.demo.repository.FeatureRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +16,8 @@ public class CaveController {
 
     @Resource
     private CaveRepository caveRepo;
+    @Resource //bt added
+    private FeatureRepository featureRepo;//bt added
 
     @RequestMapping("/caves")
     public String finalAllCaves(Model model) {
@@ -27,6 +30,7 @@ public class CaveController {
         Optional<Cave> retrievedCave = caveRepo.findById(id);
         Cave foundCave = retrievedCave.get();
         model.addAttribute("cave", foundCave);
+        model.addAttribute("feature", featureRepo.findAll());//bt added
         return "caveView";
     }
 }
