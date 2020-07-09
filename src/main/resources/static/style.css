@@ -7,7 +7,6 @@ body {
     font-weight: 300;
     overflow-x: hidden;
 }
-
 body.fh5co-offcanvas {
     overflow: hidden;
 }
@@ -18,7 +17,6 @@ a {
     -o-transition: 0.5s;
     transition: 0.5s;
 }
-
 a:hover {
     text-decoration: none !important;
     color: #fff !important;
@@ -69,19 +67,16 @@ figure {
     position: relative;
     height: 800px;
 }
-
 @media screen and (max-width: 768px) {
     .fh5co-cover,
     .fh5co-hero {
         height: 700px;
     }
 }
-
 .fh5co-cover.fh5co-hero-2,
 .fh5co-hero.fh5co-hero-2 {
     height: 600px;
 }
-
 .fh5co-cover.fh5co-hero-2 .fh5co-overlay,
 .fh5co-hero.fh5co-hero-2 .fh5co-overlay {
     position: absolute !important;
@@ -109,31 +104,26 @@ figure {
     background-size: cover;
     position: relative;
 }
-
 @media screen and (max-width: 768px) {
     .fh5co-cover {
         heifght: inherit;
         padding: 3em 0;
     }
 }
-
 .fh5co-cover .btn {
     padding: 1em 3em;
     opacity: .9;
     background: #83CC61 !important;
 }
-
 .fh5co-cover.fh5co-cover_2 {
     height: 600px;
 }
-
 @media screen and (max-width: 768px) {
     .fh5co-cover.fh5co-cover_2 {
         heifght: inherit;
         padding: 3em 0;
     }
 }
-
 .fh5co-cover .desc {
     top: 50%;
     position: absolute;
@@ -142,14 +132,12 @@ figure {
     z-index: 2;
     color: #fff;
 }
-
 @media screen and (max-width: 768px) {
     .fh5co-cover .desc {
         padding-left: 15px;
         padding-right: 15px;
     }
 }
-
 .fh5co-cover .desc h2 {
     color: #fff;
     text-transform: uppercase;
@@ -157,37 +145,30 @@ figure {
     margin-left: 30%;
     font-weight: 300 !important;
 }
-
 .fh5co-cover .desc h2 strong {
     font-weight: 700;
 }
-
 @media screen and (max-width: 768px) {
     .fh5co-cover .desc h2 {
         font-size: 40px;
     }
 }
-
 .fh5co-cover .desc span {
     display: block;
     margin-bottom: 30px;
     font-size: 28px;
     letter-spacing: 1px;
 }
-
 .fh5co-cover .desc span a {
     color: #fff;
 }
-
 .fh5co-cover .desc span a:hover, .fh5co-cover .desc span a:focus {
     color: #fff !important;
 }
-
 .fh5co-cover .desc span a:hover.btn, .fh5co-cover .desc span a:focus.btn {
     border: 2px solid #fff !important;
     background: transparent !important;
 }
-
 .fh5co-cover .desc span a.fh5co-site-name {
     padding-bottom: 2px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
@@ -196,7 +177,6 @@ figure {
 .fh5co-section {
     padding: 5em 0;
 }
-
 @media screen and (max-width: 768px) {
     .fh5co-section {
         padding: 3em 0;
@@ -210,7 +190,6 @@ figure {
     margin-top: -5em;
     padding-bottom: 5em;
 }
-
 .fh5co-listing .fh5co-item-wrap {
     padding-left: 10px;
     padding-right: 10px;
@@ -218,7 +197,6 @@ figure {
     position: relative;
 
 }
-
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item {
     background: #fff;
     position: relative;
@@ -229,7 +207,6 @@ figure {
     overflow: hidden;
 
 }
-
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item:after {
     position: absolute;
     content: "";
@@ -245,7 +222,6 @@ figure {
     transition: 0.3s;
 
 }
-
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item img {
     position: relative;
     z-index: 10;
@@ -253,7 +229,6 @@ figure {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item .fh5co-listing-copy {
     position: absolute;
     bottom: 0;
@@ -262,7 +237,6 @@ figure {
     z-index: 15;
     font-size: 16px;
 }
-
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item .fh5co-listing-copy h2 {
     color: #fff;
     font-size: 26px;
@@ -270,7 +244,6 @@ figure {
     -o-transition: 0.2s;
     transition: 0.2s;
 }
-
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item .fh5co-listing-copy .icon {
     display: block;
     position: absolute;
@@ -292,11 +265,9 @@ figure {
     transition: 0.2s;
 
 }
-
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item .fh5co-listing-copy .icon i {
     color: #fff;
 }
-
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item:hover img {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
@@ -304,17 +275,14 @@ figure {
     -o-transform: scale(1.1);
     transform: scale(1.1);
 }
-
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item:hover:after {
     -webkit-box-shadow: inset 0px -126px 311px -69px rgba(0, 0, 0, 0.95);
     -moz-box-shadow: inset 0px -126px 311px -69px rgba(0, 0, 0, 0.95);
     box-shadow: inset 0px -126px 311px -69px rgba(0, 0, 0, 0.95);
 }
-
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item:hover .fh5co-listing-copy h2 {
     margin-left: 10px;
 }
-
 .fh5co-listing .fh5co-item-wrap .fh5co-listing-item:hover .fh5co-listing-copy .icon {
     margin-right: 10px;
 }
@@ -323,19 +291,16 @@ figure {
     padding: 0;
     margin: 0;
 }
-
 .fh5co-news ul li {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-
 .fh5co-news ul li a {
     display: block;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 20px;
 }
-
 .fh5co-news ul li a .fh5co-date {
     font-family: Arial, sans-serif;
     color: rgba(255, 255, 255, 0.3);
@@ -346,13 +311,11 @@ figure {
     display: block;
     margin-bottom: 10px;
 }
-
 .fh5co-news ul li a h3 {
     margin-bottom: 10px;
     font-size: 20px;
     color: #fff;
 }
-
 .fh5co-news ul li a:hover {
     background: #000;
     padding-left: 30px;
@@ -386,7 +349,6 @@ figure {
     font-size: 16px;
     border-bottom: none !important;
 }
-
 .sf-menu a:hover, .sf-menu a:focus {
     color: #fff !important;
 }
@@ -489,11 +451,9 @@ figure {
     font-weight: 700;
     float: left;
 }
-
 #fh5co-logo span {
     font-weight: 700;
 }
-
 @media screen and (max-width: 768px) {
     #fh5co-logo {
         width: 100%;
@@ -501,11 +461,9 @@ figure {
         text-align: center;
     }
 }
-
 #fh5co-logo a {
     color: #fff;
 }
-
 #fh5co-logo a:hover, #fh5co-logo a:focus {
     color: #fff !important;
 }
@@ -517,7 +475,6 @@ figure {
     float: right;
     margin-top: 15px;
 }
-
 #fh5co-menu-wrap .sf-menu a {
     padding: 1em .75em;
 }
@@ -525,7 +482,6 @@ figure {
 #fh5co-primary-menu > li > ul li.active > a {
     color: #264E86 !important;
 }
-
 #fh5co-primary-menu > li > .sf-with-ul:after {
     border: none !important;
     font-family: 'icomoon';
@@ -546,11 +502,9 @@ figure {
     content: "\e922";
     color: rgba(255, 255, 255, 0.5);
 }
-
 #fh5co-primary-menu > li > ul li {
     position: relative;
 }
-
 #fh5co-primary-menu > li > ul li > .sf-with-ul:after {
     border: none !important;
     font-family: 'icomoon';
@@ -586,7 +540,6 @@ figure {
     -o-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
-
 #fh5co-primary-menu .fh5co-sub-menu > li > .fh5co-sub-menu {
     left: 100%;
 }
@@ -632,7 +585,6 @@ figure {
     -o-box-shadow: 0 5px 15px 4px rgba(0, 0, 0, 0.09);
     box-shadow: 0 5px 15px 4px rgba(0, 0, 0, 0.09);
 }
-
 .site-header.has-image #primary-menu .sub-menu:before {
     display: none;
 }
@@ -646,7 +598,6 @@ figure {
     text-transform: none;
     background: none;
 }
-
 #fh5co-primary-menu .fh5co-sub-menu a:hover {
     color: #264E86 !important;
 }
@@ -655,7 +606,6 @@ figure {
     padding-bottom: 1em;
     margin-bottom: 5em;
 }
-
 .heading-section:after {
     position: absolute;
     content: '';
@@ -666,13 +616,11 @@ figure {
     height: 2px;
     background: #264E86;
 }
-
 .heading-section h3 {
     font-size: 40px;
     font-weight: 300;
     position: relative;
 }
-
 .heading-section p {
     font-size: 20px;
 }
@@ -681,14 +629,12 @@ figure {
     margin: 0;
     padding: 0;
 }
-
 #fh5co-contact .contact-info li {
     list-style: none;
     margin: 0 0 20px 0;
     position: relative;
     padding-left: 40px;
 }
-
 #fh5co-contact .contact-info li i {
     position: absolute;
     top: .3em;
@@ -696,12 +642,10 @@ figure {
     font-size: 22px;
     color: rgba(255, 255, 255, 0.3);
 }
-
 #fh5co-contact .contact-info li a {
     font-weight: 400 !important;
     color: rgba(255, 255, 255, 0.5);
 }
-
 #fh5co-contact .form-control {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -718,19 +662,15 @@ figure {
     -ms-border-radius: 0px;
     border-radius: 0px;
 }
-
 #fh5co-contact .form-control:focus, #fh5co-contact .form-control:active {
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
-
 #fh5co-contact input[type="text"] {
     height: 50px;
 }
-
 #fh5co-contact .form-group {
     margin-bottom: 30px;
 }
-
 #fh5co-contact .btn {
     background: #83CC61;
 }
@@ -740,7 +680,6 @@ figure {
     height: 500px;
     position: relative;
 }
-
 @media screen and (max-width: 768px) {
     #map {
         height: 200px;
@@ -751,11 +690,9 @@ figure {
     padding: 4px 10px;
     color: #264E86;
 }
-
 .fh5co-social-icons > a i {
     font-size: 26px;
 }
-
 .fh5co-social-icons > a:hover, .fh5co-social-icons > a:focus, .fh5co-social-icons > a:active {
     text-decoration: none;
     color: #5a5a5a;
@@ -768,16 +705,13 @@ figure {
     background: #000;
     padding: 60px 0 40px;
 }
-
 #footer p {
     color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
 }
-
 #footer p a {
     color: rgba(255, 255, 255, 0.5);
 }
-
 #footer p a:hover, #footer p a:active, #footer p a:focus {
     color: rgba(255, 255, 255, 0.9) !important;
 }
@@ -795,7 +729,6 @@ figure {
     -o-transition: 0.3s;
     transition: 0.3s;
 }
-
 .btn.btn-primary {
     background: #264E86;
     color: #fff;
@@ -803,19 +736,16 @@ figure {
     border: 2px solid transparent !important;
     margin-left: 40%;
 }
-
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
     box-shadow: none;
     background: #264E86;
     color: #fff !important;
 }
-
 .btn:hover, .btn:active, .btn:focus {
     background: #393e46 !important;
     color: #fff;
     outline: none !important;
 }
-
 .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
     border-color: transparent;
 }
@@ -832,7 +762,6 @@ figure {
 .fh5co-offcanvas {
     overflow: hidden;
 }
-
 .fh5co-offcanvas #fh5co-wrapper {
     overflow: hidden !important;
 }
@@ -843,7 +772,6 @@ figure {
     -o-transition: 0.5s;
     transition: 0.5s;
 }
-
 .fh5co-offcanvas #fh5co-page {
     -moz-transform: translateX(-240px);
     -webkit-transform: translateX(-240px);
@@ -869,40 +797,32 @@ figure {
     padding: 20px;
     overflow-y: scroll !important;
 }
-
 #offcanvas-menu ul {
     padding: 0;
     margin: 0;
 }
-
 #offcanvas-menu ul li {
     padding: 0;
     margin: 0 0 10px 0;
     list-style: none;
 }
-
 #offcanvas-menu ul li a {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.4);
 }
-
 #offcanvas-menu ul li a:hover {
     color: #fff !important;
 }
-
 #offcanvas-menu ul li > .fh5co-sub-menu {
     margin-top: 9px;
     padding-left: 20px;
 }
-
 #offcanvas-menu ul li > .fh5co-sub-menu a:hover {
     color: #fff;
 }
-
 #offcanvas-menu ul li.active > a {
     color: #fff;
 }
-
 #offcanvas-menu ul .fh5co-sub-menu {
     display: block !important;
 }
@@ -911,20 +831,16 @@ figure {
     cursor: pointer;
     text-decoration: none;
 }
-
 .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
     background: #fff;
 }
-
 .fh5co-nav-toggle.dark.active i::before, .fh5co-nav-toggle.dark.active i::after {
     background: #fff;
 }
-
 .fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
     outline: none;
     border-bottom: none !important;
 }
-
 .fh5co-nav-toggle i {
     position: relative;
     display: -moz-inline-stack;
@@ -940,7 +856,6 @@ figure {
     background: #fff;
     transition: all .2s ease-out;
 }
-
 .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
     content: '';
     width: 30px;
@@ -952,14 +867,12 @@ figure {
     -o-transition: 0.2s;
     transition: 0.2s;
 }
-
 .fh5co-nav-toggle.dark i {
     position: relative;
     color: #000;
     background: #000;
     transition: all .2s ease-out;
 }
-
 .fh5co-nav-toggle.dark i::before, .fh5co-nav-toggle.dark i::after {
     background: #000;
     -webkit-transition: 0.2s;
@@ -1015,7 +928,6 @@ figure {
     display: none;
     cursor: pointer;
 }
-
 @media screen and (max-width: 768px) {
     .fh5co-nav-toggle {
         display: block;
@@ -1038,7 +950,6 @@ figure {
 .row-bottom-padded-lg {
     padding-bottom: 7em;
 }
-
 @media screen and (max-width: 768px) {
     .row-bottom-padded-lg {
         padding-bottom: 2em;
@@ -1048,7 +959,6 @@ figure {
 .row-top-padded-lg {
     padding-top: 7em;
 }
-
 @media screen and (max-width: 768px) {
     .row-top-padded-lg {
         padding-top: 2em;
@@ -1058,7 +968,6 @@ figure {
 .row-bottom-padded-md {
     padding-bottom: 4em;
 }
-
 @media screen and (max-width: 768px) {
     .row-bottom-padded-md {
         padding-bottom: 2em;
@@ -1068,7 +977,6 @@ figure {
 .row-top-padded-md {
     padding-top: 4em;
 }
-
 @media screen and (max-width: 768px) {
     .row-top-padded-md {
         padding-top: 2em;
@@ -1078,7 +986,6 @@ figure {
 .row-bottom-padded-sm {
     padding-bottom: 2em;
 }
-
 @media screen and (max-width: 768px) {
     .row-bottom-padded-sm {
         padding-bottom: 2em;
@@ -1088,7 +995,6 @@ figure {
 .row-top-padded-sm {
     padding-top: 2em;
 }
-
 @media screen and (max-width: 768px) {
     .row-top-padded-sm {
         padding-top: 2em;
@@ -1122,79 +1028,4 @@ figure {
     height: 100%;
     z-index: 9999;
     background: url(../images/hourglass.svg) center no-repeat #222222;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: grey;
-    font-family: 'Josefin Sans', sans-serif;
-
-}
-
-.wrapper {
-    margin-top: 10%;
-
-}
-
-.wrapper h1 {
-    font-family: 'Allura', cursive;
-    font-size: 52px;
-    margin-bottom: 60px;
-    text-align: center;
-}
-
-.learn {
-    display: flex;
-    text-align: center;
-    width: auto;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.learn .information{
-    background: white;
-    margin: 5px;
-    margin-bottom: 50px;
-    width: 300px;
-    padding: 20px;
-    line-height: 20px;
-    color: black;
-    position: relative;
-}
-
-.learn .information h3{
-    color: black;
-    font-size: 26px;
-    margin-top: 50px;
-}
-
-.learn .information p{
-    color: black;
-    font-size: 12px;
-    text-transform: uppercase;
-    margin: 12px 0;
-}
-
-.learn .information .learn_img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #ffffff;
-}
-
-.learn .information .learn_img img{
-    width: 100px;
-    height: 100px;
-    padding: 10px;
 }
