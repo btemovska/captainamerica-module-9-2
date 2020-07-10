@@ -15,7 +15,7 @@
     <ul class="main_menu">
         <li><a href="/difficulties">Home</a></li>
         <li><a href="/aboutUs.html">About Us</a></li>
-        <li><a href="/booking.html">Book a trip</a></li>
+        <li><a href="/booking.html">Book A Trip</a></li>
         <li><a href="/educate.html">Education</a></li>
         <li><a href="/gear.html">Gear</a></li>
     </ul>
@@ -62,11 +62,11 @@ convenience!</p>
         <h2>Travel Details</h2>
         <p>Services needed for trip:</p>
 
-        <input type="checkbox" id="hotel" name="hotel" value="Hotel">
+        <input type="checkbox" id="hotel" class="checks" value="Hotel">
         <label for="hotel">Hotel</label>
-        <input type="checkbox" id="flight" name="flight" value="Flight">
+        <input type="checkbox" id="flight" class="checks" value="Flight">
         <label for="flight">Flight</label>
-        <input type="checkbox" id="rental" name="rental" value="Rental">
+        <input type="checkbox" id="rental" class="checks" value="Rental Car">
         <label for="rental">Rental Car</label><br>
         <br><label for="departure">Departure Country:</label><br>
         <select id="departure" name="departure">
@@ -588,13 +588,14 @@ convenience!</p>
 
         <br><label for="service">Type of Service Desired:</label><br>
         <select id="service" name="service">
-            <option value="firstclass">First Class</option>
-            <option value="businessclass">Business Class</option>
-            <option value="coachclass">Coach Class</option>
+            <option value="">None</option>
+            <option value="First Class">First Class</option>
+            <option value="Business Class">Business Class</option>
+            <option value="Coach Class">Coach Class</option>
         </select>
         </ul>
 
-        <br><button onclick="()">Submit Form</button><br>
+        <br><button onclick="book()" id="btn1">Submit Form</button><br>
     </form>
 
 
@@ -632,7 +633,7 @@ convenience!</p>
             </li>
 
             <li class="button">
-                <button type="submit">Send your message</button>
+                <button onclick="contact()"  id="btn2">Send your message</button>
             </li>
 
 
@@ -641,6 +642,8 @@ convenience!</p>
 
 
 </div>
+
+<script src="main.js"></script>
 
 </body>
 
