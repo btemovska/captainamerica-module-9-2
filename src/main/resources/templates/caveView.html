@@ -29,12 +29,31 @@
 <!--    <h3 class="caveDetailsContinent" th:text="${cave.continent}"></h3>-->
         <h3 class="caveContinent" th:text="${cave.location().name}"></h3>
     <h4 class="caveFeaturesHeader"> Cave's Features:</h4>
-    <h4 class="caveFeatures" th:each="feature: ${cave.features}">
-        <p th:text="${feature.name}"></p></h4>
+<!--    <h4 class="caveFeatures" th:each="feature: ${cave.features}">-->
+<!--        <p th:text="${feature.name}"></p></h4>-->
 
     <h4 class="caveDescription">Cave Description:</h4>
+            <p th:text="${cave.description}"></p>
 
     <img class="caveImage" th:src="${cave.imageUrl}">
+
+    <h2>#hashtags</h2>
+    <div class="hashTags">
+        <form th:each="hashTag : ${cave.hashTags}"
+              th:action="'/caves/' + ${cave.id} + '/delete-hashtag/' + ${hashTag.id}" method="POST">
+            <section class="hashTag-details_container">
+                <h4 th:text = "${hashTag.name}">#</h4>
+                <button class="deleteHashTag">&times;</button>
+            </section>
+            <input type="hidden" name="hashTagId" th:value="${hashTag.id}">
+        </form>
+
+        <form th:action="'/caves/' + ${cave.id} + '/add-hashtag'" method="POST">
+            <input name = "hashTagName" type="text">
+            <button type="submit">Add Hashtag</button>
+        </form>
+    </div>
+
 </section>
 <footer>
     &copy; Captain America Team 2020

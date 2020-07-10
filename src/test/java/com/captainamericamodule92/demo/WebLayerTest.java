@@ -63,7 +63,7 @@ public class WebLayerTest {
     public void shouldBeOkForASingleCaveEndpointWithCaveViewAndCaveModelAttribute() throws Exception {
         Difficulty testDifficulty = new Difficulty("Expert");
         Location testLocation = new Location("testLocation", "");
-        Cave testCave = new Cave("testCave", "testUrl", testLocation, testDifficulty);
+        Cave testCave = new Cave("testCave", "testUrl", testLocation, "", testDifficulty);
         when(caveRepo.findById(1L)).thenReturn(java.util.Optional.of(testCave));
         mockMvc.perform(get("/caves/1"))
                 .andExpect(status().isOk())

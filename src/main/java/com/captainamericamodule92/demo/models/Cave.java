@@ -1,10 +1,9 @@
 package com.captainamericamodule92.demo.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Objects;
+import java.util.*;
 
 @Entity
 public class Cave {
@@ -16,10 +15,14 @@ public class Cave {
     private String imageUrl;
     @ManyToOne
     private Location location;
+    private String description;
     @ManyToOne
     private Difficulty difficulty;
     @ManyToMany
     private Collection<Feature> features;
+    @ManyToMany
+    @JsonIgnore
+    private Set<HashTag> hashTags;
 
     public Long getId() {
         return id;
@@ -29,26 +32,47 @@ public class Cave {
         return name;
     }
 
-    public String getImageUrl() { return imageUrl; }
+    public String getImageUrl() {
+        return imageUrl;
+    }
 
-    public Location location() { return location;}
+    public Location location() {
+        return location;
+    }
+
+    public String getDescription() {
+        return description;
+    }
 
     public Difficulty getDifficulty() {
         return difficulty;
     }
 
-    public Collection<Feature> getFeatures() {// bt added
-        return features;
+    public Collection<HashTag> getHashTags() {
+        return hashTags;
     }
 
-    public Cave() {};
+    public void addHashTag(HashTag hashTagToAdd) {
+        hashTags.add(hashTagToAdd);
+    }
 
-    public Cave(String name, String imageUrl, Location location, Difficulty difficulty, Feature...features){
+    public void deleteHashTag(HashTag hashTagToRemove) {
+        hashTags.remove(hashTagToRemove);
+    }
+
+    public Cave() {
+    }
+
+    ;
+
+    public Cave(String name, String imageUrl, Location location, String description, Difficulty difficulty, Feature... features) {
         this.name = name;
         this.imageUrl = imageUrl;
         this.location = location;
+        this.description = description;
         this.difficulty = difficulty;
         this.features = new ArrayList<>(Arrays.asList(features));
+        this.hashTags = new HashSet<>();
     }
 
     @Override

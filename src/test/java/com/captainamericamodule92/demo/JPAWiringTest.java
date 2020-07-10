@@ -32,7 +32,7 @@ public class JPAWiringTest {
     public void difficultyShouldHaveACollectionOfCaves() {
         Difficulty testDifficulty = new Difficulty("testLevel");
         Location testLocation = new Location("testLocation", "");
-        Cave testCave = new Cave("testCave", "testUrl", testLocation, testDifficulty);
+        Cave testCave = new Cave("testCave", "testUrl", testLocation, "", testDifficulty);
 
         difficultyRepo.save(testDifficulty);
         caveRepo.save(testCave);
