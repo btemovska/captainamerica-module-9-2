@@ -28,8 +28,6 @@ function book() {
         }
     }
 
-
-
     confirm("Hello " + fname + " " + mname + " " + lname + " ." +
     "The service you requested is as follows: " + service + " " + str +"\n\nDeparture" +
         "Date and Time: " + departuredate + " " + departuretime + "\n\nArrival Date: " + arrivaldate + " " + arrivaltime +
