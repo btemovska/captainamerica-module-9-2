@@ -2,8 +2,10 @@ package com.captainamericamodule92.demo;
 
 import com.captainamericamodule92.demo.models.Cave;
 import com.captainamericamodule92.demo.models.Difficulty;
+import com.captainamericamodule92.demo.models.Location;
 import com.captainamericamodule92.demo.repository.CaveRepository;
 import com.captainamericamodule92.demo.repository.DifficultyRepository;
+import com.captainamericamodule92.demo.repository.LocationRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -23,14 +25,18 @@ public class JPAWiringTest {
     private DifficultyRepository difficultyRepo;
     @Autowired
     private CaveRepository caveRepo;
+    @Autowired
+    private LocationRepository locationRepo;
 
     @Test
     public void difficultyShouldHaveACollectionOfCaves() {
         Difficulty testDifficulty = new Difficulty("testLevel");
-        Cave testCave = new Cave("testCave", "testUrl", "testContinent", testDifficulty);
+        Location testLocation = new Location("testLocation", "");
+        Cave testCave = new Cave("testCave", "testUrl", testLocation, testDifficulty);
 
         difficultyRepo.save(testDifficulty);
         caveRepo.save(testCave);
+        locationRepo.save(testLocation);
 
         entityManager.flush();
         entityManager.clear();

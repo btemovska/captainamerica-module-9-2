@@ -7,12 +7,12 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Single Difficulty</title>
+    <title>Single Location</title>
 </head>
 <body>
 <header class="header">
 <!--    <h1> <img src="../images/cave2.jpg"> </h1>-->
-    <h1> <img class="frontCaveImage" src="/images/frontCaveImage.jpg"></h1>
+    <h1> <img class="frontCaveImage" src="../images/frontCaveImage.jpg"></h1>
 </header>
 <nav>
     <ul class="main_menu">
@@ -24,20 +24,21 @@
     </ul>
 </nav>
 <!--<a class="backHome" href="/difficulties">back to difficulties</a>-->
-<h1 class="headerTitle" th:text="${difficulty.level}"></h1>
+<h1 class="headerTitle" th:text="${location.name}"></h1>
 <section class="caveList">
     <h2 class="caveListHeading">Here is list of our Caves:</h2>
 
     <nav class="caveNavList">
         <ul>
-            <li class="caveListLinkCave" th:each="cave:${difficulty.caves}">
+            <li class="caveListLinkCave" th:each="cave:${location.caves}">
                 <a class="caveListLinkCave" th:href="@{'/caves/'+ ${cave.id}}"
                    th:text="${cave.name}">Refactoring</a>
             </li>
         </ul>
     </nav>
-<!--    </div>-->
+    </div>
 </section>
+<img class="locationImage" th:src="${location.imageUrl}">
 <footer>
     &copy; Captain America Team 2020
 </footer>

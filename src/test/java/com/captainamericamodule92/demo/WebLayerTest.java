@@ -2,6 +2,7 @@ package com.captainamericamodule92.demo;
 
 import com.captainamericamodule92.demo.models.Cave;
 import com.captainamericamodule92.demo.models.Difficulty;
+import com.captainamericamodule92.demo.models.Location;
 import com.captainamericamodule92.demo.repository.CaveRepository;
 import com.captainamericamodule92.demo.repository.DifficultyRepository;
 import org.junit.jupiter.api.Test;
@@ -61,7 +62,8 @@ public class WebLayerTest {
     @Test
     public void shouldBeOkForASingleCaveEndpointWithCaveViewAndCaveModelAttribute() throws Exception {
         Difficulty testDifficulty = new Difficulty("Expert");
-        Cave testCave = new Cave("testCave", "testUrl", "testContinent", testDifficulty);
+        Location testLocation = new Location("testLocation", "");
+        Cave testCave = new Cave("testCave", "testUrl", testLocation, testDifficulty);
         when(caveRepo.findById(1L)).thenReturn(java.util.Optional.of(testCave));
         mockMvc.perform(get("/caves/1"))
                 .andExpect(status().isOk())

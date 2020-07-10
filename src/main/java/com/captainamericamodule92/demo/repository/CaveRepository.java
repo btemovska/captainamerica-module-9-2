@@ -5,4 +5,5 @@ import com.captainamericamodule92.demo.models.Cave;
 import org.springframework.data.repository.CrudRepository;
 
 public interface CaveRepository extends CrudRepository<Cave, Long> {
+    Cave findDifficultyById(String name);
 }
