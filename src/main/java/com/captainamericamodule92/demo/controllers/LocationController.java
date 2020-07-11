@@ -17,7 +17,6 @@ public class LocationController {
     private LocationRepository locationRepo;
 
     @RequestMapping({"/locations"})
-//    @RequestMapping({"/locations", "/", ""})
     public String displayLocations(Model model) {
         model.addAttribute("locations", locationRepo.findAll());
         return "locationsView";

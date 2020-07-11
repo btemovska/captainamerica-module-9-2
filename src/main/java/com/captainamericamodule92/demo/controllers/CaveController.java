@@ -20,8 +20,8 @@ public class CaveController {
 
     @Resource
     private CaveRepository caveRepo;
-    @Resource //bt added
-    private FeatureRepository featureRepo;//bt added
+    @Resource
+    private FeatureRepository featureRepo;
     @Resource
     private HashTagRepository hashTagRepo;
 
@@ -36,7 +36,7 @@ public class CaveController {
         Optional<Cave> retrievedCave = caveRepo.findById(id);
         Cave foundCave = retrievedCave.get();
         model.addAttribute("cave", foundCave);
-        model.addAttribute("feature", featureRepo.findAll());//bt added
+        model.addAttribute("feature", featureRepo.findAll());
         return "caveView";
     }
 

@@ -52,7 +52,7 @@ public class Cave {
         return hashTags;
     }
 
-    public Collection<Feature> getFeatures(){return features;}  //bt added it 07/10
+    public Collection<Feature> getFeatures(){return features;}
 
     public void addHashTag(HashTag hashTagToAdd) {
         hashTags.add(hashTagToAdd);
@@ -64,8 +64,6 @@ public class Cave {
 
     public Cave() {
     }
-
-//    ;
 
     public Cave(String name, String imageUrl, Location location, String description, Difficulty difficulty, Feature... features) {
         this.name = name;
