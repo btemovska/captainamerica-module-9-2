@@ -29,20 +29,22 @@
 <!--    <h3 class="caveDetailsContinent" th:text="${cave.continent}"></h3>-->
         <h3 class="caveContinent" th:text="${cave.location().name}"></h3>
     <h4 class="caveFeaturesHeader"> Cave's Features:</h4>
-<!--    <h4 class="caveFeatures" th:each="feature: ${cave.features}">-->
-<!--        <p th:text="${feature.name}"></p></h4>-->
+    <h4 class="caveFeatureDetails" th:each="feature: ${cave.features}">
+        <p th:text="${feature.name}"></p></h4>
 
     <h4 class="caveDescription">Cave Description:</h4>
-            <p th:text="${cave.description}"></p>
+    <h4 class="caveDescriptionDetails">
+            <p th:text="${cave.description}"></p></h4>
 
     <img class="caveImage" th:src="${cave.imageUrl}">
 
-    <h2>#hashtags</h2>
+    <div class="hashTagWrapper">
+    <h2 class="hashTagsHeader">#hashtags</h2>
     <div class="hashTags">
         <form th:each="hashTag : ${cave.hashTags}"
               th:action="'/caves/' + ${cave.id} + '/delete-hashtag/' + ${hashTag.id}" method="POST">
             <section class="hashTag-details_container">
-                <h4 th:text = "${hashTag.name}">#</h4>
+                <p th:text = "${hashTag.name}">#</p>
                 <button class="deleteHashTag">&times;</button>
             </section>
             <input type="hidden" name="hashTagId" th:value="${hashTag.id}">
@@ -52,6 +54,7 @@
             <input name = "hashTagName" type="text">
             <button type="submit">Add Hashtag</button>
         </form>
+    </div>
     </div>
 
 </section>
