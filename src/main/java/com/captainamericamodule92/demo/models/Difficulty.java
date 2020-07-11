@@ -14,7 +14,7 @@ public class Difficulty {
     @GeneratedValue
     private Long id;
     private String level;
-    @OneToMany(mappedBy = "difficulty")  //changed this from difficutly to difficulty
+    @OneToMany(mappedBy = "difficulty")
     private Collection<Cave> caves;
 
     public Long getId() {
